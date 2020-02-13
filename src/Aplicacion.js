@@ -1,6 +1,9 @@
 import React,  { Component } from "react";
 import SelectoresAtributo from "./selectoresAtributo";
 import Trabajoconformularios from "./Trabajoconformularios";
+import Animaciones from "./Animaciones";
+import Distribucion from "./Distribucion";
+import Medidafr from "./Medidafr";
 
 class Aplicacion extends Component {
 
@@ -11,7 +14,10 @@ class Aplicacion extends Component {
 
             <div>
                 {/* <SelectoresAtributo /> */}
-                <Trabajoconformularios />
+                {/*<Trabajoconformularios />*/}
+                <Animaciones />
+                <Distribucion />
+                <Medidafr />
             </div>
 
         )

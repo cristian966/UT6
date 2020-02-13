@@ -55,4 +55,91 @@ input[type=text].claseinput1 {
   transition: width 2s ease-in-out;
 }
 
+.clasecapa1 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 2s, height 4s;
+  /* Para Safari 3.1 a 6.0 */
+  transition: width 2s, height 4s;
+}
+
+/*div:hover {
+  width: 300px;
+  height: 300px;
+}*/
+/*Distribuciones*/
+.contenedorgrid {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  padding: 10px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  text-align: center;
+}
+.contenedorgrid__cabecera {
+  grid-column: 1/4;
+  border: 2px solid red;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorgrid__cabecera__menu {
+  display: flex;
+}
+.contenedorgrid__cabecera__menu > div {
+  width: 33.3333333333;
+  border: 2px solid seagreen;
+  height: 150px;
+  margin: 50px;
+}
+.contenedorgrid__aside1 {
+  grid-column: 1/2;
+  border: 2px solid greenyellow;
+  height: 500px;
+}
+.contenedorgrid__main {
+  grid-column: 2/3;
+  border: 2px solid blue;
+  height: 500px;
+}
+.contenedorgrid__aside2 {
+  grid-column: 3/4;
+  border: 2px solid greenyellow;
+  height: 500px;
+}
+.contenedorgrid__footer {
+  grid-column: 1/4;
+  border: 2px solid lightcoral;
+  height: 100px;
+}
+
+/*Responsivo*/
+/*Medida fr*/
+/*Medida fr*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 150px repeat(12, 1fr);
+  grid-column-gap: 10px;
+  background-color: rgba(255, 0, 0, 0.7);
+  height: 40rem;
+}
+.grid__column {
+  font-family: "Output Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 9px;
+  background-color: rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 /*# sourceMappingURL=hojacssproyectout6.css.map */
